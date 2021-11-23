@@ -9,9 +9,7 @@ package usa.sesion1.adornostienda;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.ContentValues;
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -67,24 +65,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         opcServicios = (MenuItem)findViewById(R.id.opcServicios);
         opcContacto = (MenuItem)findViewById(R.id.opcContacto);
 
-        /**
-        //Crear el acceso a la BaseDeDatos SQLite
-        //super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        MyOpenHelper dbHelper = new MyOpenHelper(this);
-        SQLiteDatabase db = dbHelper.getWritableDatabase();
-        if (db != null) {
-            // Hacer las operaciones que queramos sobre la base de datos
-            // Insert con execSQL
-            db.execSQL("INSERT INTO comments (user, comment) VALUES ('Digital Learning','Esto es un comentario insertado usando el método execSQL()')");
-            // Insert con ContentValues
-            ContentValues cv = new ContentValues();
-            cv.put("user", "Academia Android");
-            cv.put("comment", "Esto es un comentario insertado usando el método insert()");
-            db.insert("comments", null, cv);
-        }
-         */
-
     }
 
     /**
@@ -94,12 +74,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      */
     @Override
     public void onClick(View v) {
-        //x=v.;
-        //y="";
         Toast.makeText(this, "Presionó el botón Login", Toast.LENGTH_LONG).show();
-        //Toast.makeText(this, y, Toast.LENGTH_LONG).show();
-        //v.getId()
-        //opcProductos.setVisible(false);
         imgIngreso.setVisibility(View.VISIBLE);
         txtIngreso.setVisibility(View.VISIBLE);
         btnLogin.setText("Volver");

@@ -26,8 +26,8 @@ public class Productos extends AppCompatActivity  implements View.OnClickListene
         setContentView(R.layout.activity_productos);
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setTitle("Productos navideños");
-        getSupportActionBar().setSubtitle("Seleccione el producto de su interés");
+        getSupportActionBar().setTitle("AppDORNOS");
+        getSupportActionBar().setSubtitle("Materializamos ideas de diseño");
         getSupportActionBar().setLogo(R.mipmap.ic_icon_adorno);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
 

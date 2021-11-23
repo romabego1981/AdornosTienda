@@ -25,8 +25,8 @@ public class Servicios extends AppCompatActivity  implements View.OnClickListene
         setContentView(R.layout.activity_servicios);
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setTitle("Servicios de DECORACIÓN");
-        getSupportActionBar().setSubtitle("Le prestamos el mejor servicio para sus eventos.");
+        getSupportActionBar().setTitle("AppDORNOS");
+        getSupportActionBar().setSubtitle("Materializamos ideas de diseño");
         getSupportActionBar().setLogo(R.mipmap.ic_icon_adorno);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
 

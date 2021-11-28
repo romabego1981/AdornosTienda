@@ -1,8 +1,10 @@
 package usa.sesion1.adornostienda;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -18,6 +20,7 @@ public class Productos extends AppCompatActivity  implements View.OnClickListene
     private TextView txtProducto2;
     private TextView txtProducto3;
     private TextView txtProducto4;
+    private Toolbar mytoolbar;
 
 
     @Override
@@ -26,8 +29,8 @@ public class Productos extends AppCompatActivity  implements View.OnClickListene
         setContentView(R.layout.activity_productos);
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setTitle("AppDORNOS");
-        getSupportActionBar().setSubtitle("Materializamos ideas de diseño");
+        //getSupportActionBar().setTitle("AppDORNOS");
+        //getSupportActionBar().setSubtitle("Materializamos ideas de diseño");
         getSupportActionBar().setLogo(R.mipmap.ic_icon_adorno);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
 
@@ -68,5 +71,10 @@ public class Productos extends AppCompatActivity  implements View.OnClickListene
 
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.mymenu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
 
 }

@@ -1,8 +1,10 @@
 package usa.sesion1.adornostienda;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -18,6 +20,7 @@ public class Servicios extends AppCompatActivity  implements View.OnClickListene
     private TextView txtServicioArbol;
     private TextView txtServicioFiestas;
     private TextView txtServicioQuince;
+    private Toolbar mytoolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,4 +70,13 @@ public class Servicios extends AppCompatActivity  implements View.OnClickListene
         Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
 
     }
+
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.mymenu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
 }

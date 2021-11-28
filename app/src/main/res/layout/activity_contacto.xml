@@ -14,6 +14,9 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="181dp">
 
+        <include android:id="@+id/mytoolbar"
+            layout="@layout/mytoolbar"/>
+
         <ImageView
             android:id="@+id/imgContacto"
             android:layout_width="339dp"
